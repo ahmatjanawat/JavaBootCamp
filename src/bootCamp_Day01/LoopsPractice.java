@@ -31,9 +31,11 @@ public class LoopsPractice {
         String r = "";   // "abc"
 
         for(String each   : s1.split("") ){
-            if( !r.contains(each)){
-                r += each;
+            if( r.contains(each)){
+                continue; // skips
+              // break; // exits the loop
             }
+            r += each;
         }
 
 
